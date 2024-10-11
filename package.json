@@ -1,0 +1,30 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "Youtube seach api",
+  "author": "Eduardo Cruz",
+  "license": "ISC",
+  "keywords": [
+    "videos, youtube, api"
+  ],
+  "dependencies": {
+    "fastify": "^4.24.3",
+    "jest": "^29.7.0",
+    "cloudinary": "^2.4.0",
+    "puppeteer-core": "^22.13.1",
+    "@sparticuz/chromium-min": "^126.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.10",
+    "puppeteer": "^23.2.1",
+    "typescript": "^5.2.2",
+    "tsup": "^7.2.0",
+    "tsx": "^3.14.0"
+  },
+  "scripts": {
+    "dev": "tsx src/server.js",
+    "build": "tsup src",
+    "server": "node dist/server.js --output public"
+  }
+}
